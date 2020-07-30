@@ -10,17 +10,16 @@ public class Main {
     }
 
     static boolean uniquechars(String string){
-        char[] stringarr = string.toCharArray();
 
-        for(int i = 0; i < stringarr.length; i++){
-            for(int j = 0; j < stringarr.length; j++){
-                if(stringarr[i] == stringarr[j]){
-                    if(i != j){
+        for(int i = 0; i < string.length(); i++)
+            for(int j = 0; j < string.length(); j++)
+                if(string.charAt(i) == string.charAt(j))
+                    if(i != j)
                         return false;
-                    }
-                }
-            }
-        }
+
+
+
+
 
 
         return true;
